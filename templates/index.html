@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- <style>
+        body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url('{% static "/images/20607.jpg" %}');
+        }
+    </style> -->
+    
+    
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Website Detection</title>
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Detecting Phishing Websites</h1>
+                <ul>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'faq' %}">FAQ</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section id="hero">
+        <div class="container">
+            <h2>Stop Phishing Attacks Before They Start !!! </h2>
+            <!--<p>Revolutionize your business with cutting-edge technology solutions.</p>-->
+            <a href="{% url 'admin_user' %}" class="btn">Get Started</a>
+        </div>
+        <section id="why-choose-us">
+            <div class="container">
+                <h3>About</h3>
+                <p>Phishing, an attack by cybercriminals, is a social web engineering attack in which valuable data or personal information may be stolen from email addresses or a website. Many methods are available to detect phishing, but new ones are being introduced in an effort to increase detection accuracy and reduce the success of phishing websites in stealing information. . In this study, our objective is to detect phishing websites.</p>
+                <div class="animated-text">
+                    <div class="line">Don't get hooked by phishers.</div>
+                    <div class="line">Think before you click.</div>
+                    <div class="line">Phishing: If you suspect deceit, hit delete!.</div>
+                    <div class="line">Don't be afraid to say no</div>
+                    <div class="line">Passwords: Longer is Stronger.</div>
+                </div>
+            </div>
+            
+        </section>
+       
+    </section>
+    
+
+    <!--<section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Custom Software Development</h3>
+                <p>Transform your ideas into powerful software solutions.</p>
+            </div>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Create a strong online presence with responsive websites.</p>
+            </div>
+            <div class="service">
+                <h3>Mobile App Development</h3>
+                <p>Reach your customers with user-friendly mobile apps.</p>
+            </div>
+            <div class="service">
+                <h3>AI and Machine Learning</h3>
+                <p>Leverage data-driven insights and automation.</p>
+            </div>
+            <div class="service">
+                <h3>Cloud Solutions</h3>
+                <p>Scale your business effortlessly with cloud platforms.</p>
+            </div>
+        </div>
+    </section>-->
+
+    
+
+
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Ready to transform your Ideas? Get in touch with us!</p>
+            <div class="contact-form">
+                <form action="" method="POST">{% csrf_token %}
+                    <input type="text" placeholder="Your Name" name="name">
+                    <input type="email" placeholder="Your Email" name="email">
+                    <textarea placeholder="Your Message" name="message"></textarea>
+                    <button class="btn" id="mess">Send Message</button>
+                    <script>
+                        const showPopupButton = document.getElementById("mess");
+                
+                        showPopupButton.addEventListener("click", () => {
+                            window.alert("Youre Message are Registerd.Note:!!! Must give your name and email id ");
+                        });
+                    </script>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Project Solutions. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.twitter.com/">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

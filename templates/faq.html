@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Website Detection</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/faqst.css' %}">
+</head>
+<body>
+
+    
+   
+    <header>
+        <h1>Phishing Website Detection</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Welcome to our Phishing Website Detection Service</h2>
+            <p>
+                Our service helps you identify potentially malicious websites and protect yourself from online threats.
+                Use our tool to check if a website is safe to visit.
+            </p><br>
+            <br>
+            <h2>Frequently Asked Questions</h2>
+            <ul class="faq-list">
+                <li>
+                    <h3>What is phishing?</h3>
+                    <p>Phishing is a cybercrime where attackers create fake websites to steal sensitive information such as passwords and credit card details.</p>
+                </li>
+                <li>
+                    <h3>How does your tool work?</h3>
+                    <p>Our tool analyzes website features and patterns to determine if it matches known phishing characteristics. It then provides a risk assessment.</p>
+                </li>
+                <li>
+                    <h3>Is the tool 100% accurate?</h3>
+                    <p>No tool can guarantee 100% accuracy, but our tool uses advanced algorithms to make accurate predictions based on various factors.</p>
+                </li>
+                <li>
+                    <h3>Is this service free?</h3>
+                    <p>Yes, our basic phishing detection service is available for free to help users stay safe online.</p>
+                </li>
+
+                <li><h3>
+                    <a href="{% url 'home' %}#contact">More</a></h3>
+                </li>
+            </ul>
+        </section>
+    </main>
+         
+    <footer>
+        <p>&copy; 2023 Phishing Detection Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>

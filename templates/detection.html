@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detection</title>
+</head>
+<body>
+    <h1>Phishing Detection</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Detect</button>
+    </form>
+    {% if result == 'good' %}
+     <p>Result: {{ result }}</p> 
+    <p>This Website are Safe</p>
+    {% elif result == 'bad' %}
+    <p>This Website are Not Safe</p>
+    {% endif %}
+</body>
+</html> -->
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/detection.css' %}">
+    <link rel="stylesheet" href="{% static '/css/navbar.css' %}">
+    <title>Phishing Detection</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'blacklist' %}">Blacklist</a></li>
+          <li><a href="{% url 'home' %}#contact">Contact us</a></li>
+        </ul>
+      </nav>
+    <style>
+        body
+        {
+            background-repeat:no-repeat;
+            background-attached:fixed;
+            background-size:cover;
+            background-image: url('{% static "/images/hacker-8018467_1280.png" %}');
+        }
+    </style>
+    <div class="container">
+        <h1>Phishing Detection</h1>
+        <form method="post">
+            {% csrf_token %}
+            <label for="url">Enter URL:</label>
+            <input type="url" placeholder="https://www.example.com" id="url" name="url" class="text-box" required>
+            <button type="submit" class="submit-button">Detect</button>
+        </form>
+        {% if result == 'good' %}
+        <!-- <p>Result: {{ result }}</p> -->
+        <h1>This Website are Safe</h1>
+        {% elif result == 'bad' %}
+        <h1>This Website are Not Safe</h1>
+        {% endif %}
+        {% if typed_url %}
+        <p class="typed-url">Typed URL: {{ typed_url }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+

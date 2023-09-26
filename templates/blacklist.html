@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blacklists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-repeat:no-repeat;
+            background-attached:fixed;
+            background-size:cover;
+            background-image:url('/static/images/hacker-8018467_1280.png');
+        }
+        .container {
+            background-color: rgba(40, 40, 40, 0.266);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            width: 60%;
+            height: 80%;
+            /* max-width: 400px; */
+            text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .list-container {
+            /* max-height: 300px; */
+            overflow-y: auto;
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            color: #ffffff;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blacklists</h1>
+        <div class="list-container">
+            <ul>
+                {% for i in blacklists %}
+                <li>{{ i.url_name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

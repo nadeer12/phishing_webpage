@@ -1,0 +1,146 @@
+
+
+{% load static %}
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('{% static "/images/hacker-8018467_1280.png" %}');
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 40px 50px;
+    font-size: 25px;
+    border: 10;
+    background-color: #0f0f0f7b;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #dfdfdf68;
+  }
+</style>
+<title>Admin and user</title>
+</head>
+<body>
+<div class="container">
+  <a  href="{% url 'about' %}"><button>Admin</button>
+  <a  href="{% url 'about' %}"><button>User.</button>
+</div>
+</body>
+</html> -->
+
+
+
+<!-- templates/myapp/index.html -->
+<!-- {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-image: url('{% static "/images/20607.jpg" %}');
+    }
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static '/css/admin_user.css' %}">
+<title>Button Example</title>
+</head>
+<body>
+<div class="container">
+  <a class="button" href="{% url 'about' %}">Admin</a>
+  <a class="button" href="{% url 'login' %}">User</a>
+</div>
+</body>
+</html> -->
+
+
+    
+    
+    
+    
+
+  
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Button Redirect Example</title>
+    <style>
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 180vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-image: url('{% static "/images/hacker-8018467_1280.png" %}');
+      }
+      .container {
+
+        text-align: center;
+      }
+  
+  
+        /* Add CSS styles for the button */
+        .redirect-button {
+            display: inline-block;
+            padding: 50px 50px;
+            font-size: 25px;
+            border: 10;
+            background-color: #0f0f0f7b;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            border-radius: 60px;
+        }
+        .button:hover {
+          background-color: #dfdfdf68;
+        }
+           
+        
+    </style>
+</head>
+<body>
+    <p>Click the button below to be redirected:</p>
+    
+    <a href="{% url 'admin_login' %}">
+        <button class="redirect-button">Admin</button>
+
+        
+      <a href="{% url 'login' %}">
+        <button class="redirect-button">User.</button>
+    </a>
+</body>
+</html>

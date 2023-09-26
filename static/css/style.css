@@ -1,0 +1,244 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin:0;
+    padding:0;
+    font-family: montserrat,sans-serif;
+}
+
+.animated-text{
+    color:#ffffff;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:0 40px;
+    height:60px;
+    overflow:hidden;
+}
+.line{
+    text-align:center;
+    font-size:40px;
+    line-height:60px;
+}
+
+.line:first-child{
+    animation: anim 20s infinite;
+}
+@keyframes anim{
+    0%{
+        margin-top:0;
+    }
+    16%{
+        margin-top:-120px;
+    }
+    33%{
+        margin-top:-120px;
+    }
+    50%{
+        margin-top:-180px;
+    }
+    66%{
+        margin-top:-120px;
+    }
+    82%{
+        margin-top:-60px;
+    }
+    100%{
+        margin-top:0;
+    }
+}
+
+/* Header styles */
+header {
+    background-color: #080808;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero section styles */
+#hero {
+    background-image: url('/static/images/hacker-8018467_1280.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #ffffff;
+    text-align: center;
+    padding: 160px 0;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff3e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+/* Services section styles */
+#services {
+    background-color: #00000042;
+    padding: 80px 0;
+}
+
+.service {
+    border: 1px solid #0000006a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Why Choose Us section styles */
+#why-choose-us {
+    /*background-color: #235482;*/
+    color: #b56c6c;
+    padding: 50px 0;
+}
+
+#why-choose-us ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#why-choose-us li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #000000ef;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #c2e6fa;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #0000002e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000e1;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* body{
+    margin:0;
+    padding:0;
+    font-family: montserrat,sans-serif;
+    
+}
+.animated-text{
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:0 40px;
+    height:60px;
+    overflow:hidden;
+}
+.line{
+    text-align:center;
+    font-size:40px;
+    line-height:60px;
+}
+
+.line:first-child{
+    animation: anim 20s infinite;
+}
+@keyframes anim{
+    0%{
+        margin-top:0;
+    }
+    16%{
+        margin-top:-120px;
+    }
+    33%{
+        margin-top:-120px;
+    }
+    50%{
+        margin-top:-180px;
+    }
+    66%{
+        margin-top:-120px;
+    }
+    82%{
+        margin-top:-60px;
+    }
+    100%{
+        margin-top:0;
+    }
+}
+                </style> */

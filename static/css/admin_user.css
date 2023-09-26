@@ -1,0 +1,35 @@
+/* static/myapp/css/styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('{% static "/images/hacker-8018467_1280.png" %}');
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 40px 50px;
+    font-size: 25px;
+    border: 10;
+    background-color: #0f0f0f7b;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #dfdfdf68;
+  }
+  

@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #1d1c1c3d;
+  overflow: hidden;
+}
+
+.nav-list {
+  list-style-type:disc;
+  margin: 0;
+  padding: 0;
+  display:flex;
+}
+
+.nav-list li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-list li a {
+  display: block;
+  padding: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  background-color: #555;
+}
